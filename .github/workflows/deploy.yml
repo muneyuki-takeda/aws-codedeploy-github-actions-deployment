@@ -6,7 +6,7 @@ on:
 env:
   applicationfolder: spring-boot-hello-world-example
   AWS_REGION: us-east-1
-  S3BUCKET: takeda-m-codedeploystack-webappdeploymentbucket-lis7rfvifn7p
+  S3BUCKET: takeda-m-codedeploystack-webappdeploymentbucket-zxsszzcfqcrv
 
 
 jobs:
