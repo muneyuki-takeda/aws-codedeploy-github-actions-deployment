@@ -313,10 +313,26 @@ Resources:
       GroupDescription: allow access to ALB from internet
       VpcId: !Ref VPC
       SecurityGroupIngress:
+      # - IpProtocol: tcp
+      #   FromPort: 8080
+      #   ToPort: 8080
+      #   CidrIp: 0.0.0.0/0
       - IpProtocol: tcp
         FromPort: 8080
         ToPort: 8080
-        CidrIp: 0.0.0.0/0
+        CidrIp: 210.138.50.8/30
+      - IpProtocol: tcp
+        FromPort: 8080
+        ToPort: 8080
+        CidrIp: 210.138.50.4/30
+      - IpProtocol: tcp
+        FromPort: 8080
+        ToPort: 8080
+        CidrIp: 202.232.29.0/24
+      - IpProtocol: tcp
+        FromPort: 8080
+        ToPort: 8080
+        CidrIp: 202.232.30.0/24
       SecurityGroupEgress:
       - IpProtocol: '-1'
         CidrIp: 0.0.0.0/0  
